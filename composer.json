@@ -1,0 +1,20 @@
+{
+  "name": "JP/tester",
+  "description": "Helpers for Nette/Tester.",
+  "homepage": "https://github.com/honzapospi/nette-tester-helper",
+  "keywords": ["testing", "nette"],
+  "license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+  "authors": [
+    {
+      "name": "Jan Pospisil",
+      "homepage": "http://honzapospi.cz"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "nette/tester": "^1.6"
+  },
+  "autoload": {
+    "classmap": ["src/"]
+  }
+}
