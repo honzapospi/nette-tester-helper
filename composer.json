@@ -1,5 +1,5 @@
 {
-  "name": "JP/tester",
+  "name": "jp/tester",
   "description": "Helpers for Nette/Tester.",
   "homepage": "https://github.com/honzapospi/nette-tester-helper",
   "keywords": ["testing", "nette"],
