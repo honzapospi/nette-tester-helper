@@ -37,7 +37,7 @@ class HomepagePresenter extends Tester\TestCase
 		$response = $presenter->run($request);
 		$html = $this->presenterHelper->textResponse($response);
 		$dom = \Tester\DomQuery::fromHtml($html);
-		Assert::true( $dom->has('#conten"]') );
+		Assert::true( $dom->has('#content"]') );
 	}
 
 }
