@@ -25,7 +25,7 @@ class FormHelper extends \Nette\Object {
 	 *
 	 */
 	public function sendForm(Form $form, array $values){
-		$presenter = new FormPresenter($form, $values);
+		$presenter = (new FormPresenter())->setup($form, $values);
 		$form->setParent($presenter);
 		$form->signalReceived('submit');
 		return $form;

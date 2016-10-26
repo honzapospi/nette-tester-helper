@@ -22,14 +22,14 @@ class FormPresenter extends Presenter {
 
 
 	/**
-	 * FormPresenter constructor.
 	 * @param Form $form
 	 * @param array $values
 	 */
-	public function __construct(Form $form, array $values){
+	public function setup(Form $form, array $values){
 		parent::__construct();
 		$this->form = $form;
 		$this->values = $values;
+		return $this;
 	}
 
 	/**
