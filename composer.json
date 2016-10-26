@@ -1,5 +1,5 @@
 {
-  "name": "honzapospi/tester-helper",
+  "name": "honzapospi/nette-tester-helper",
   "description": "Helpers for Nette/Tester.",
   "homepage": "https://github.com/honzapospi/nette-tester-helper",
   "keywords": ["testing", "nette"],
