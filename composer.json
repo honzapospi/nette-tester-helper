@@ -1,5 +1,5 @@
 {
-  "name": "jp/tester",
+  "name": "honzapospi/tester-helper",
   "description": "Helpers for Nette/Tester.",
   "homepage": "https://github.com/honzapospi/nette-tester-helper",
   "keywords": ["testing", "nette"],
@@ -7,7 +7,7 @@
   "authors": [
     {
       "name": "Jan Pospisil",
-      "homepage": "http://honzapospi.cz"
+      "homepage": "http://www.jan-pospisil.cz/"
     }
   ],
   "require": {
