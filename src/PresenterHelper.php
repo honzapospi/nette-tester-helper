@@ -42,17 +42,20 @@ class PresenterHelper extends \Nette\Object {
 		return $this->createPresenter($request->getPresenterName())->run($request);
 	}
 
-	public function textResponse(TextResponse $textResponse){
-		$s = (string) $textResponse->getSource();
+	public function textResponse($response){
+		Assert::type('Nette\Application\Responses\TextResponse', $response);
+		$s = (string) $response->getSource();
 		Assert::true(gettype($s) == 'string');
 		return $s;
 	}
 
-	public function jsonResponse(JsonResponse $response){
+	public function jsonResponse($response){
+		Assert::type('Nette\Application\Responses\JsonResponse', $response);
 		Assert::true(is_array($response->getPayload()));
 	}
 
-	public function redirectResponse(RedirectResponse $response, $code = 302, $urlEnding = NULL){
+	public function redirectResponse($response, $code = 302, $urlEnding = NULL){
+		Assert::type('Nette\Application\Responses\RedirectResponse', $response);
 		Assert::true($response->getCode() == $code);
 		if($urlEnding){
 			$parts = explode('?', $response->getUrl());
