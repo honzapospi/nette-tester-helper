@@ -24,7 +24,7 @@ class FormHelper extends \Nette\Object {
 	 * - submit by different button (Forms/Form:422 fireEvents())
 	 *
 	 */
-	public function sendForm(Form $form, array $values){
+	public static function sendForm(Form $form, array $values){
 		$presenter = (new FormPresenter())->setup($form, $values);
 		$form->setParent($presenter);
 		$form->signalReceived('submit');

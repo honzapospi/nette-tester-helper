@@ -13,9 +13,10 @@ namespace JP\Tester;
 
 class TestHelper extends \Nette\Object {
 
-	public static function setPrivate(\Nette\Object $object, $name, $value){
-		$property = $object->getReflection()->getProperty($name);
-		$property->setAccessible(TRUE);
+	public static function setPrivate($object, $name, $value){
+		$reflectionClass = new \ReflectionClass($object);
+		$property = $reflectionClass->getProperty($name);
+		$property->setAccessible(true);
 		$property->setValue($object, $value);
 	}
 
