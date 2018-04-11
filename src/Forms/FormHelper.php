@@ -7,13 +7,15 @@
 namespace JP\Tester\Forms;
 use Nette\Application\UI\Form;
 use Nette\Utils\ArrayHash;
+use Nette\StaticClass;
 
 /**
  * FormHelper
  * @author Jan Pospisil
  */
 
-class FormHelper extends \Nette\Object {
+class FormHelper {
+	use StaticClass;
 
 	/**
 	 * @param Form $form

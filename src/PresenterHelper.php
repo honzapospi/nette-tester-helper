@@ -12,13 +12,15 @@ use Nette\Application\Responses\TextResponse;
 use Nette\Application\UI\Presenter;
 use Nette\DI\Container;
 use Tester\Assert;
+use Nette\StaticClass;
 
 /**
  * PresenterHelper
  * @author Jan Pospisil
  */
 
-class PresenterHelper extends \Nette\Object {
+class PresenterHelper {
+	use StaticClass;
 
 	protected $container;
 	public $requestBuilder;

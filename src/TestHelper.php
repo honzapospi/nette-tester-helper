@@ -5,13 +5,15 @@
  */
 
 namespace JP\Tester;
+use Nette\StaticClass;
 
 /**
  * TestHelper
  * @author Jan Pospisil
  */
 
-class TestHelper extends \Nette\Object {
+class TestHelper {
+	use StaticClass;
 
 	public static function setPrivate($object, $name, $value){
 		$reflectionClass = new \ReflectionClass($object);

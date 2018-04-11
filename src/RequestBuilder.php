@@ -6,13 +6,15 @@
 
 namespace JP\Tester;
 use Nette\Application\Request;
+use Nette\SmartObject;
 
 /**
  * RequestBuilder
  * @author Jan Pospisil
  */
 
-class RequestBuilder extends \Nette\Object {
+class RequestBuilder {
+	use SmartObject;
 
 	const GET = 'GET';
 	const POST = 'POST';
