@@ -3,16 +3,16 @@
   "description": "Helpers for Nette/Tester.",
   "homepage": "https://github.com/honzapospi/nette-tester-helper",
   "keywords": ["testing", "nette"],
-  "license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+  "license": ["MIT", "BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
   "authors": [
     {
       "name": "Jan Pospisil",
-      "homepage": "http://www.jan-pospisil.cz/"
+      "homepage": "https://www.jan-pospisil.cz/"
     }
   ],
   "require": {
-    "php": ">= 7.0",
-    "nette/tester": "^1.6"
+    "php": ">= 7.1",
+    "nette/tester": "^2.0"
   },
   "autoload": {
     "classmap": ["src/"]
